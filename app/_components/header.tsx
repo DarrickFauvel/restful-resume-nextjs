@@ -1,3 +1,26 @@
+const sections = [
+  {
+    title: "About",
+    id: "about",
+  },
+  {
+    title: "Projects",
+    id: "projects",
+  },
+  {
+    title: "Experience",
+    id: "experience",
+  },
+  {
+    title: "Education",
+    id: "education",
+  },
+  {
+    title: "Contact",
+    id: "contact",
+  },
+]
+
 const Header = () => {
   return (
     <header>
