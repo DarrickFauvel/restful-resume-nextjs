@@ -1,32 +1,12 @@
-const sections = [
-  {
-    title: "About",
-    id: "about",
-  },
-  {
-    title: "Projects",
-    id: "projects",
-  },
-  {
-    title: "Experience",
-    id: "experience",
-  },
-  {
-    title: "Education",
-    id: "education",
-  },
-  {
-    title: "Contact",
-    id: "contact",
-  },
-]
+import { contactInfo } from "../config"
+import { sections } from "../config"
 
 const Header = () => {
   return (
     <header>
       <div>
-        <h1>Darrick Fauvel</h1>
-        <span>Software Developer</span>
+        <h1>{contactInfo.name}</h1>
+        <span>{contactInfo.title}</span>
       </div>
       <nav>
         <ul>
