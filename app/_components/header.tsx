@@ -2,6 +2,14 @@ import { contactInfo } from "../config"
 import { sections } from "../config"
 
 const Header = () => {
+  const NavListItems = () => {
+    return sections.map(({ title, id }) => (
+      <li key={id}>
+        <a href={`#${id}`}>{title}</a>
+      </li>
+    ))
+  }
+
   return (
     <header className="flex">
       <div className="flex-grow">
@@ -10,11 +18,7 @@ const Header = () => {
       </div>
       <nav>
         <ul className="flex flex-col">
-          {sections.map(({ title, id }) => (
-            <li key={id}>
-              <a href={`#${id}`}>{title}</a>
-            </li>
-          ))}
+          <NavListItems />
         </ul>
       </nav>
     </header>
